@@ -9,7 +9,7 @@ const path = require('path');
 const htmlWebpackPlugin = require('html-webpack-plugin');
 
 // Vue Loader v15 现在需要配合一个 webpack 插件才能正确使用,而这个插件就是 vue-loader/lib/plugin
-const VueLoaderPlugin = require('vue-loader/lib/plugin');
+// const VueLoaderPlugin = require('vue-loader/lib/plugin');
 
 // 这个配置文件，其实就是一个 JS 文件，通过 node 中的 模块操作，向外暴露了一个 配置对象
 module.exports = {
@@ -31,7 +31,7 @@ module.exports = {
             template: path.join(__dirname, './src/index.html'),
             filename: "index.html"// 指定生成的页面的名称
         }),
-        new VueLoaderPlugin()
+        // new VueLoaderPlugin()
     ],
     module: {// 这个节点，用于配置所有 第三方模块 加载器
         rules: [// 所有第三方模块的 匹配规则

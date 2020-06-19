@@ -1,7 +1,7 @@
 import Vue from 'vue'
 
 // 1. 导入vue-router包
-import VueRouter from 'vue-loader'
+import VueRouter from 'vue-router'
 
 // 2. 手动安装 VueRouter
 Vue.use(VueRouter)
@@ -19,7 +19,7 @@ var routerObj = new VueRouter({
         { path:'/account',component:account },
         { path:'/goodslist',component:goodsList}
     ]
-})
+});
 
 var vm = new Vue({
     el:'#app',
@@ -28,4 +28,4 @@ var vm = new Vue({
     },
     // 4. 将路由对象 挂载 到 vm 上
     router: routerObj
-})
+});
